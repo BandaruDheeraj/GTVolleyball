@@ -44,7 +44,7 @@ submit.submit()
 time.sleep(5)
 
 #Temporarily transfer the first 20 items
-tempStart = 0
+tempStart = 6
 tempEnd = 20
 for i in range(tempStart, tempEnd):
 

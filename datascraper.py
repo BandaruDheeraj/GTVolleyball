@@ -15,7 +15,7 @@ firebase = pyrebase.initialize_app(config)
 db = firebase.database()
 
 #Open webpage on safari
-browser = webdriver.Safari()
+browser = webdriver.Chrome()
 browser.get("http://app.myvert.com/coach/events")
 username = browser.find_element_by_id('user_email')
 password = browser.find_element_by_id('user_password')
@@ -27,7 +27,7 @@ password.send_keys("gtvolleyball2018")
 submit.submit()
 
 #Wait until page loads
-time.sleep(10)
+time.sleep(5)
 
 #Temporarily transfer the first 20 items
 tempStart = 0

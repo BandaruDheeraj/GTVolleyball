@@ -48,7 +48,7 @@ tempStart = 6
 tempEnd = 20
 
 ref = browser.find_elements_by_xpath("//body/div[2]/div/div/div/table/tbody")
-print(ref[0].find_elements_by_xpath('tr'))
+print(ref[0].find_elements_by_xpath('tr')[6])
 """
 hyperlink = ref[0].find_elements_by_xpath("tr")[i].find_elements_by_xpath("td")[0].text
 event = ref[0].find_elements_by_xpath("tr")[i].find_elements_by_xpath("td")[7].text

@@ -49,6 +49,7 @@ tempEnd = 20
 for i in range(tempStart, tempEnd):
 
     #Get the hyperlink, date, and event id reference
+    print(browser.page_source)
     ref = browser.find_elements_by_xpath("//body/div[2]/div/div/div/table/tbody")
     hyperlink = ref[0].find_elements_by_xpath("tr")[i].find_elements_by_xpath("td")[0].text
     event = ref[0].find_elements_by_xpath("tr")[i].find_elements_by_xpath("td")[7].text

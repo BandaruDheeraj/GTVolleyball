@@ -37,6 +37,7 @@ submit = browser.find_element_by_name("commit")
 #Login to webpage
 username.send_keys("mcollier@athletics.gatech.edu")
 password.send_keys("gtvolleyball2018")
+print("exec1")
 submit.submit()
 
 #Wait until page loads
@@ -58,6 +59,7 @@ for i in range(tempStart, tempEnd):
         if letter == "/":
             event = event.replace(letter,"-")
 
+    print('exec2')
     #Wait until page loads
     time.sleep(5)
 

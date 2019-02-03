@@ -46,6 +46,14 @@ time.sleep(5)
 #Temporarily transfer the first 20 items
 tempStart = 6
 tempEnd = 20
+
+ref = browser.find_elements_by_xpath("//body/div[2]/div/div/div/table/tbody")
+print(ref)
+"""
+hyperlink = ref[0].find_elements_by_xpath("tr")[i].find_elements_by_xpath("td")[0].text
+event = ref[0].find_elements_by_xpath("tr")[i].find_elements_by_xpath("td")[7].text
+date = ref[0].find_elements_by_xpath("tr")[i].find_elements_by_xpath("td")[8].text
+
 for i in range(tempStart, tempEnd):
 
     #Get the hyperlink, date, and event id reference
@@ -84,6 +92,6 @@ for i in range(tempStart, tempEnd):
     #browser.get("http://app.myvert.com/coach/events")
 
     #Wait until page loads
-    #time.sleep(5)
+    #time.sleep(5)"""
 
 browser.quit()

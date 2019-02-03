@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eb13484-5f9f-440b-8917-526eb03d1c4b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datascraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/datascraper.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,7 +69,7 @@
           <entry key="css" value="26" />
           <entry key="html" value="475" />
           <entry key="js" value="1033" />
-          <entry key="py" value="2544" />
+          <entry key="py" value="2575" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -78,7 +77,7 @@
           <entry key="CSS" value="26" />
           <entry key="HTML" value="475" />
           <entry key="JavaScript" value="1033" />
-          <entry key="Python" value="2544" />
+          <entry key="Python" value="2575" />
         </counts>
       </usages-collector>
     </session>
@@ -91,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/datascraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="285">
+              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -252,12 +251,12 @@
       <workItem from="1541305488114" duration="17638000" />
       <workItem from="1541457142671" duration="26000" />
       <workItem from="1549155248044" duration="1753000" />
-      <workItem from="1549159303019" duration="190000" />
+      <workItem from="1549159303019" duration="643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37679000" />
+    <option name="totallyTimeSpent" value="38132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
@@ -366,8 +365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/datascraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="285">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>

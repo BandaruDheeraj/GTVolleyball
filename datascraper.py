@@ -3,6 +3,8 @@ import pyrebase
 import requests
 import time
 import os
+from selenium.webdriver.chrome.options import Options
+
 
 #Initialize database
 config = {
@@ -21,7 +23,12 @@ db = firebase.database()
 chromedriver = "/usr/bin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 
-browser = webdriver.Chrome(chromedriver)
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("window-size=1024,768")
+chrome_options.add_argument("--no-sandbox")
+
+browser = webdriver.Chrome(chrome_options=chrome_options, executable_path=chromedriver)
 browser.get("http://app.myvert.com/coach/events")
 username = browser.find_element_by_id('user_email')
 password = browser.find_element_by_id('user_password')

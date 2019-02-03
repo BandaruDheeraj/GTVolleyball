@@ -70,15 +70,16 @@ for i in range(tempStart, tempEnd):
 
     #Request data from the json url
     data = browser.find_elements_by_xpath("//body/div[2]/div[2]/div[2]/div[3]/div/div/tt/a")
-    r = requests.get(data[0].get_attribute("href"))
+    print(data)
+    #r = requests.get(data[0].get_attribute("href"))
 
     #Push the data to firebase
-    db.child(event).child(date).update(r.json())
+    #db.child(event).child(date).update(r.json())
 
     #Go back to home page
-    browser.get("http://app.myvert.com/coach/events")
+    #browser.get("http://app.myvert.com/coach/events")
 
     #Wait until page loads
-    time.sleep(5)
+    #time.sleep(5)
 
 browser.quit()

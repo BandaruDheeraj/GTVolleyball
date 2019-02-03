@@ -2,6 +2,7 @@ from selenium import webdriver
 import pyrebase
 import requests
 import time
+import os
 
 #Initialize database
 config = {
@@ -15,7 +16,12 @@ firebase = pyrebase.initialize_app(config)
 db = firebase.database()
 
 #Open webpage on safari
-browser = webdriver.Chrome()
+
+
+chromedriver = "/usr/bin/chromedriver"
+os.environ["webdriver.chrome.driver"] = chromedriver
+
+browser = webdriver.Chrome(chromedriver)
 browser.get("http://app.myvert.com/coach/events")
 username = browser.find_element_by_id('user_email')
 password = browser.find_element_by_id('user_password')

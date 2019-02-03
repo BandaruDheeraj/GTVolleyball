@@ -74,7 +74,8 @@ for i in range(tempStart, tempEnd):
     #Request data from the json url
     data = browser.find_elements_by_xpath("//body/div[2]/div[2]/div[2]/div[3]/div/div/tt/a")
     print(data)
-    #r = requests.get(data[0].get_attribute("href"))
+    r = requests.get(data[0].get_attribute("href"))
+    print(r.json())
 
     #Push the data to firebase
     #db.child(event).child(date).update(r.json())
